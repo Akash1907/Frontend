@@ -1,0 +1,158 @@
+#cellInput {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid;
+  position: relative;
+  z-index: 3;
+}
+.colorId {
+  background-color: #acd1ee;
+}
+input {
+  color: black;
+}
+input::selection {
+  border: #6caad9;
+}
+input:disabled {
+  color: rgb(134, 134, 134);
+  position: relative;
+  z-index: 2;
+}
+.sudokuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vh;
+  gap: 1vh;
+}
+.sudoku {
+  display: flex;
+  margin-left: 2rem;
+}
+table {
+  border-collapse: collapse;
+  border: 5px solid #6caad9;
+}
+td {
+  padding: 0;
+}
+.bBorder {
+  border-bottom: 2px solid #6caad9;
+}
+.rBorder {
+  border-right: 2px solid #6caad9;
+}
+input::placeholder {
+  font-size: 12px;
+  justify-content: space-between;
+}
+.input-wrapper {
+  position: relative;
+}
+.input-wrapper div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  pointer-events: none;
+  margin: 2px;
+  font-size: 10px;
+  color: #6d6c6c;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5vh;
+}
+.time {
+  border: 2px solid #6caad9;
+  border-radius: 10px;
+  height: 6vh;
+  width: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6caad9;
+  background-color: #acd1ee;
+}
+.midDot {
+  color: #6caad9;
+  font-size: 4vh;
+}
+.time-p {
+  font-size: 3.5vh;
+}
+
+.iconBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.4vh;
+}
+.iconBtn2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tooltiptext {
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+.slidingContainer {
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 0%;
+}
+.optionsBtnClose {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  background-color: #6caad9;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.optionsBtnOpen {
+  transition: transform 1s;
+  transform: translateX(10.2vh);
+  background-color: #6caad9;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.rightSectionOpen {
+  position: absolute;
+  padding: 1.5vh;
+  background-color: #6caad9;
+  right: 2rem;
+  transition: transform 1s;
+  transform: translateX(10.5vh);
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1;
+}
+.rightSectionClose {
+  position: absolute;
+  right: 7rem;
+  visibility: hidden;
+}
+.options {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
